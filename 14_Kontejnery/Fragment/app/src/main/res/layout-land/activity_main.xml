@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- constraint layout C0,
+     sirka max, vyska max, vertikalni orientace,
+     obsahuje kod MainActivity -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- constraint layout C1,
+     sirka 240dp, vyska max,
+     ukotveni zleva a zezhora k C0 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- layout C1 neobsahuje zadne elementy
+              doplni se sem programove fragment -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- constraint layout C2,
+         sirka max, vyska 240dp,
+         ukotveni zleva k C1, zprava a zezhora k C0,
+         okraje 8dp -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintLeft_toRightOf="@+id/firstLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+        <!-- layout C2 neobsahuje zadne elementy
+              doplni se sem programove fragment -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
