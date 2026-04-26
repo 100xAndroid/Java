@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZalozkaApi">
+
+    <!-- linear layout, s obsahem zalozky API
+         sirka a vyska max, vertikalni -->
+    <LinearLayout
+        android:id="@+id/tab3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- scroll view, sirka a vyska max -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- textove pole, sirka max, vyska 35dp
+                 okraj 5dp, velikost textu 15sp -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:text="@string/verzeAPI" />
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
